@@ -35,4 +35,4 @@ after cloning the repository navigate to the client and server directories using
 `pip install mediapipe`
 `python3 handtracker.py`
 
-open [StrumAlign](https://localhost:3000) and test out the application!
+open [StrumAlign](http://localhost:3000) and test out the application!
