@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Many beginner guitar players struggle with proper technique and current guitar apps only rely on audio signals to provide training while YouTube videos don't provide real-time feedback which is why we wanted to create an app that uses computer vision to provide real-time video-based feedback for users.
 
 ## Available Scripts
 
-In the project directory, you can run:
+The application uses computer vision to map out the user's fingers on a guitar's fretboard and performs curvature analysis on their fingers and determine if their fingers are curved enough and that their wrist is properly straight.
 
-### `npm start`
+### How we Built it?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We used openCV and MediaPipe for hand tracking and then utilized vector math to calculate the angle of each finger based on 3 joints located within the finger. Finally, we utilized React to create a frontend to integrate our computer vision finger tracking.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Challenges
 
-### `npm test`
+Some challenges we ran into were integrating the frontend with the computer vision models and displaying them on a website with a nice user interface
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Accomplishments that we're proud of
 
-### `npm run build`
+We're proud of the fact that we were able to get a working project with so many complicated features to integrate properly into a nice fleshed-out product.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Next Steps
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We wish to make this more widely available by scaling up to cloud platforms and adding more functionalities such as chord detection and musical tempo training as well.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Quick Start Guide
 
-### `npm run eject`
+after cloning the repository navigate to the client and server directories using bash commands.
+**client:**
+`npm install`
+`npm start`
+**server:**
+`pip install flask`
+`pip install flask_cors`
+`pip install opencv-python`
+`pip install mediapipe`
+`python3 handtracker.py`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+open [StrumAlign](http://localhost:3000) and test out the application!
