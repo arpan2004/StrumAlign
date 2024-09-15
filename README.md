@@ -21,3 +21,18 @@ We're proud of the fact that we were able to get a working project with so many 
 ### Next Steps
 
 We wish to make this more widely available by scaling up to cloud platforms and adding more functionalities such as chord detection and musical tempo training as well.
+
+### Quick Start Guide
+
+after cloning the repository navigate to the client and server directories using bash commands.
+**client:**
+`npm install`
+`npm start`
+**server:**
+`pip install flask`
+`pip install flask_cors`
+`pip install opencv-python`
+`pip install mediapipe`
+`python3 handtracker.py`
+
+open [StrumAlign](https://localhost:3000) and test out the application!
