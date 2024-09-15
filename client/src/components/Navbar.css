@@ -16,6 +16,11 @@
     color: #fff;
     text-decoration: none;
   }
+
+  .navbar-logo img{
+    width: 75px; 
+    height: auto;
+  }
   
   .navbar-links {
     display: flex;
