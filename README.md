@@ -21,9 +21,3 @@ We're proud of the fact that we were able to get a working project with so many 
 ### Next Steps
 
 We wish to make this more widely available by scaling up to cloud platforms and adding more functionalities such as chord detection and musical tempo training as well.
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
