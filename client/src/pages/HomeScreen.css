@@ -1,28 +1,27 @@
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f5cdb4;
-  }
-  
-  .welcome-text {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 40px;
-    font-weight: bold;
-  }
-  
-  .button {
-    background-color: #6200ee;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 10px;
-    margin: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #d0e6c1; /* Matcha green background */
+}
+
+.welcome-text {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #6a9c78; /* Matcha green button */
+  color: white;
+  padding: 15px 35px;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}

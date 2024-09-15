@@ -1,6 +1,6 @@
 /* Navbar.css */
 .navbar {
-    background-color: #6200ee;
+    background-color: #6a9c78; /* Matcha green background */
     color: #fff;
     padding: 10px 20px;
   }
@@ -16,9 +16,9 @@
     color: #fff;
     text-decoration: none;
   }
-
-  .navbar-logo img{
-    width: 75px; 
+  
+  .navbar-logo img {
+    width: 75px;
     height: auto;
   }
   
